@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #271063; 
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #d1d1d1; 
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #0c0c0c;
+}
+
+.about p {
+    font-size: 1em;
+    color: #333; 
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.portfolio {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #090909; 
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.portfolio-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pricing {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #F0F0F0; /* Light gray background for subtle contrast */
+}
+
+.pricing h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0d0d0d; /* Consistent gray for section headings */
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.package {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.package:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    transform: scale(1.02);
+}
+
+.package h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.package p {
+    font-size: 1em;
+    color: #666; 
+    margin-bottom: 10px;
+}
+
+.package strong {
+    font-size: 1.2em;
+    color: #0c0c0c; 
+}
+
+.booking {
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #555; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #555; 
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #211747;
+    color: #d1d1d1;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+.footer .social-links a {
+    color: #999; 
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #555;
+}
