@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Register for Your Photography Session</h1>
+    </header>
+
+    <section class="registration">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" action="submit_registration.php" method="POST">
+
+            <!-- Full Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <!-- Session Type -->
+            <label for="sessionType">Session Type:</label>
+            <select id="sessionType" name="sessionType" required>
+                <option value="portrait">Portrait</option>
+                <option value="wedding">Wedding</option>
+                <option value="landscape">Landscape</option>
+                <option value="event">Event</option>
+            </select>
+
+            <!-- Package -->
+            <label for="package">Selected Package:</label>
+            <select id="package" name="package" required>
+                <option value="basic">Basic Package - Rs.10,000</option>
+                <option value="standard">Standard Package - Rs.20,000</option>
+                <option value="premium">Premium Package - Rs.50,000</option>
+            </select>
+
+            <!-- Date -->
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Photography Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to pre-select the package based on URL parameter -->
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedPackage = urlParams.get('package');
+            if (selectedPackage) {
+                document.getElementById('package').value = selectedPackage;
+            }
+        };
+    </script>
+</body>
+</html>

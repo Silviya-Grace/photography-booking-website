@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Application Form</title>
+<body>
+    <header><div class="formtitle"><h1>Application Form</h1></div></header>
+    <section>
+    <form class="appform" method="post" action="formaction">
+    <div class="container">
+    <div><label>Full Name:</label><input type="text" id="name" name="name" style="padding:5px;margin:10px;"></div>
+    <div><label>Father's Name:</label><input type="text" id="fathername" name="fathername" style="padding:5px;margin:10px;"></div>
+    <div><label>Mother's Name:</label><input type="text" id="mothername" name="mothername" style="padding:5px;margin:10px;"></div>
+    <div><label>Aadhaar No:</label><input type="text" id="aadhaarno" name="aadhaar" style="padding:5px;margin:10px;"></div>
+    <div><label>Date of Birth:</label><input type="text" id="dob" name="dob" style="padding:5px;margin:10px;"></div>
+    <div><label>Gender:</label><input type="radio" id="male" name="gender" value="Male" style="padding:5px;margin:10px;cursor:pointer;"><span>Male</span><input type="radio" id="female" name="gender" value="Female" style="padding:5px;margin:10px;cursor:pointer;"><span>Female</span></div>
+    <div><button type="submit" id="submitBtn" style="padding:10px;margin:5px;background-color:green;cursor:pointer;color:white;border-radius:5px;">Submit</button>
+    <button type="reset" id="resetBtn" style="padding:10px;margin:5px;background-color:red;cursor:pointer;color:white;border-radius:5px;">Reset</button></div>
+    </form>
+    </section>
+    </body>
+    </html>
+    
